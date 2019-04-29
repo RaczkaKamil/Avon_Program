@@ -140,7 +140,7 @@
                 <Label prefHeight="29.0" prefWidth="0.0" />
                 <HBox>
 
-                    <TextArea editable="false" prefHeight="477.0" prefWidth="300.0" />
+                    <TextArea editable="false" prefHeight="477.0" prefWidth="300.0" fx:id="Area1"/>
 
                     <Label prefHeight="456.0" prefWidth="0.0" />
 
