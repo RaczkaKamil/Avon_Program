@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 
 <VBox xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-    <BorderPane fx:id="mainpane" prefHeight="1200.0" prefWidth="800.0" style="-fx-background-image: url('AvonTlo.png')">
+    <BorderPane fx:id="mainpane" prefHeight="1200.0" prefWidth="900.0" style="-fx-background-image: url('AvonTlo.png')">
 
 
         <left>
@@ -121,6 +121,7 @@
                     </HBox>
 
                 </VBox>
+
             </VBox>
         </left>
 
@@ -140,7 +141,7 @@
                 <Label prefHeight="29.0" prefWidth="0.0" />
                 <HBox>
 
-                    <TextArea editable="false" prefHeight="477.0" prefWidth="300.0" fx:id="Area1"/>
+                    <TextArea fx:id="Area1" editable="false" prefHeight="477.0" prefWidth="300.0" />
 
                     <Label prefHeight="456.0" prefWidth="0.0" />
 

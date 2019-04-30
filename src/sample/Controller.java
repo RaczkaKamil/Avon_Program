@@ -1,10 +1,16 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 import sample.Kremy.Krem;
 import sample.Kremy.KremIlosc;
 import sample.Kremy.KremList;
@@ -20,7 +26,13 @@ import sample.Tusze.Tusz;
 import sample.Tusze.TuszIlosc;
 import sample.Tusze.TuszList;
 
-public class Controller {
+import javafx.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller  implements Initializable {
     @FXML
     ComboBox Perfuma_Rodzaj;
     @FXML
@@ -87,6 +99,8 @@ public class Controller {
     private void Krem_Wiek() {Krem_Wiek.getItems().addAll(kremwiek.getKremwiek());}
 
     private void Tusz_Rodzaj() {Tusz_Rodzaj.getItems().addAll(tuszList.getTuszlista());}
+@FXML Button bs;
+
 
 
 
@@ -128,4 +142,12 @@ public class Controller {
                 "Tusz: " + "\n" + tuszIlosc.getTuszIlosc().toString() + "\n" + "\n");
 
     }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+
+    }
+
+
+
 }
