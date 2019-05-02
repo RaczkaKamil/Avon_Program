@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-image: url('AvonTlo.png')" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Magazyn">
+   <children>
+      <Label layoutX="566.0" layoutY="279.0" text="No Elo" />
+   </children>
+</AnchorPane>

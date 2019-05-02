@@ -6,7 +6,6 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
-<?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -26,7 +25,7 @@
             <Glow />
          </effect>
       </Label>
-      <Label layoutX="133.0" layoutY="74.0" text="Zaloguj sie skarbie, aby poznac sekrety mojej aplikacji ">
+      <Label layoutX="97.0" layoutY="82.0" text="Zaloguj sie skarbie, aby poznac sekrety mojej aplikacji ">
          <font>
             <Font size="18.0" />
          </font>
@@ -35,14 +34,11 @@
                <bumpInput>
                   <Shadow />
                </bumpInput>
-               <light>
-                  <Light.Distant />
-               </light>
             </Lighting>
          </effect>
       </Label>
-      <PasswordField layoutX="199.0" layoutY="181.0" prefHeight="39.0" prefWidth="228.0" />
-      <TextField layoutX="199.0" layoutY="133.0" prefHeight="39.0" prefWidth="228.0" />
+      <PasswordField fx:id="haslo" layoutX="199.0" layoutY="181.0" prefHeight="39.0" prefWidth="228.0" />
+      <TextField fx:id="login" layoutX="199.0" layoutY="133.0" prefHeight="39.0" prefWidth="228.0" />
       <Label layoutX="148.0" layoutY="139.0" prefHeight="27.0" prefWidth="43.0" text="Login:" textFill="#067ec3">
          <font>
             <Font size="14.0" />
@@ -51,5 +47,6 @@
          <font>
             <Font size="14.0" />
          </font></Label>
+      <Button layoutX="469.0" layoutY="154.0" mnemonicParsing="false" onAction="#Logowanie2" prefHeight="54.0" prefWidth="119.0" text="Wymus logowanie" />
    </children>
 </AnchorPane>
